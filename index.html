@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<style>
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    
+    appearance: none;
+    
+}
+
+    body{
+
+        background-color:#093b6f;
+        font-family: futura;
+        color: #e3fff1;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .infoText{
+        margin: 75px auto 10px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 500px;
+    }
+
+
+    .interactables{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40rem;
+        margin: 10px auto;
+    }
+
+    .usrInput{
+        background-color: #e3fff1;
+        padding: 10px 10px 10px 15px;
+        border-radius: 15px;
+        outline: none;
+        appearance: none;
+        border: none;
+        
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    button{
+        padding: 8px;
+        width: 15rem;
+        border-radius: 15px;
+        border-width: 1px;
+        border-color: #000;
+        color: #093b6f;
+        background-color: #e3fff1;
+        font-family: futura;
+        outline: none;
+    }
+
+    button:hover{
+        background-color:#a0bbae;
+    }
+
+    button:active{
+        background-color: #4e5a54;
+    }
+
+
+</style>
+<body>
+    <script async src="./javascript/index.js"></script>
+    <div class="title">
+        <h1>Guess The Number!</h1>
+        <h4>Pick a number between 0 - 100</h4>
+    </div>
+    <div class="infoText">
+        <p id="higherLower"></p>
+        <p id="guesses"></p>
+    </div>
+    <div class="interactables">
+        <input
+            id="usrInput"
+            class="usrInput"
+            type="number"
+        />
+        <div class="buttons">
+            <button id="guess">Guess</button>
+            <button id="reset">Reset</button>
+        </div>
+    
+        
+        
+    </div>
+
+</body>
